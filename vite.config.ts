@@ -6,6 +6,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      base: '/Cursist_Hulpverleners_van_BHVLand/',
       server: {
         port: 3000,
         host: '0.0.0.0',
@@ -19,20 +20,20 @@ export default defineConfig(({ mode }) => {
             name: "BHV'ers van BHV Land",
             short_name: 'BHV Land',
             description: "Training app voor BHV'ers - Hulpverleners van BHV Land",
-            start_url: '/',
+            start_url: '/Cursist_Hulpverleners_van_BHVLand/',
             display: 'standalone',
             background_color: '#f8fafc',
             theme_color: '#002b47',
             orientation: 'portrait',
             icons: [
               {
-                src: '/icons/icon-192x192.png',
+                src: 'icons/icon-192x192.png',
                 sizes: '192x192',
                 type: 'image/png',
                 purpose: 'maskable any'
               },
               {
-                src: '/icons/icon-512x512.png',
+                src: 'icons/icon-512x512.png',
                 sizes: '512x512',
                 type: 'image/png',
                 purpose: 'maskable any'
