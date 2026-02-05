@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#002b47">
+    <meta name="description" content="Training app voor BHV'ers - Hulpverleners van BHV Land">
+
+    <title>BHV'ers van BHV Land</title>
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-192x192.png">
+
+    <style>
+        /* Critical CSS for initial load */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8fafc;
+            -webkit-tap-highlight-color: transparent;
+            min-height: 100vh;
+        }
+        #root { min-height: 100vh; }
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #002b47;
+            color: white;
+            font-size: 1.25rem;
+        }
+    </style>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"><div class="loading">BHV Land laden...</div></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
