@@ -1,4 +1,5 @@
 // Generate properly-sized PWA icons from the SVG source
+// Install sharp first: npm install --no-save sharp
 // Run: node scripts/generate-icons.js
 
 import sharp from 'sharp';
